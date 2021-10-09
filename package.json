@@ -4,7 +4,9 @@
   "description": "Browser based game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/Nikitashalimov/ajs-homeworks_1_working-enviroment/issues"
   },
-  "homepage": "https://github.com/Nikitashalimov/ajs-homeworks_1_working-enviroment#readme"
+  "homepage": "https://github.com/Nikitashalimov/ajs-homeworks_1_working-enviroment#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  },
+  "dependencies": {
+    "core-js": "^3.18.2"
+  }
 }
